@@ -29,7 +29,6 @@ public class Main {
         int time_period = scanner.nextInt();
 
         int TOTAL_NUMBER_OF_PAYMENTS = time_period * MONTHS;
-
         MORTGAGE = PRINCIPLE * (MONTHLY_RATE * Math.pow(1 + MONTHLY_RATE, TOTAL_NUMBER_OF_PAYMENTS)) / (Math.pow(1 + MONTHLY_RATE, TOTAL_NUMBER_OF_PAYMENTS) - 1);
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(MORTGAGE);
         System.out.println("Mortgage: " + MORTGAGE);
