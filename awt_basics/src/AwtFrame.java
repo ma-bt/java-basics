@@ -13,6 +13,8 @@ public class AwtFrame {
 
         Button button  = new Button("Click Me");
         button.setBounds(40,50,80,40);
+        button.setBackground(Color.gray);
+        button.setForeground(Color.white);
 
         frame.setTitle("This is Frame title");
         frame.add(button);
