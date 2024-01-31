@@ -16,7 +16,7 @@ public class FlowLayoutDemo {
         TextArea textArea2 = new TextArea("text here");
         TextArea textArea3 = new TextArea("text here");
         TextArea textArea4 = new TextArea("text here");
-        
+
 //Flow_layout
         f.setLayout(new FlowLayout(FlowLayout.LEFT));
 

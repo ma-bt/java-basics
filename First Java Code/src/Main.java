@@ -1,6 +1,4 @@
-import java.sql.SQLOutput;
 import java.text.NumberFormat;
-import java.util.Date;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -31,7 +29,7 @@ public class Main {
         int TOTAL_NUMBER_OF_PAYMENTS = time_period * MONTHS;
         MORTGAGE = PRINCIPLE * (MONTHLY_RATE * Math.pow(1 + MONTHLY_RATE, TOTAL_NUMBER_OF_PAYMENTS)) / (Math.pow(1 + MONTHLY_RATE, TOTAL_NUMBER_OF_PAYMENTS) - 1);
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(MORTGAGE);
-        System.out.println("Mortgage: " + MORTGAGE);
+        System.out.println("Mortgage: " + mortgageFormatted);
 
 
 
