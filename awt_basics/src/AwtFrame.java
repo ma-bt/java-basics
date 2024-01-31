@@ -51,6 +51,9 @@ public class AwtFrame {
 
 
     public static void main(String[] args) {
+
         AwtFrame frame = new AwtFrame();
+        AwtFrame frame2 = new AwtFrame();
+
     }
 }
