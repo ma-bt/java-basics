@@ -1,5 +1,6 @@
 import javax.swing.*;
-import java.awt.*;
+import javax.swing.JCheckBox;
+import java.awt.FlowLayout;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -8,18 +9,27 @@ public class Main {
         JFrame f = new JFrame("User Form");
         f.setVisible(true);
         f.setSize(600,400);
+        f.setLayout(new FlowLayout( FlowLayout.CENTER));
 
         JLabel label =  new JLabel("User Name: ");
         f.add(label);
 
-        JTextField textField = new JTextField(20);
+        JTextField textField = new JTextField(10);
         f.add(textField);
 
         JLabel label2 =  new JLabel("Password: ");
         f.add(label2);
 
-        JTextField textField2 = new JTextField(20);
+        JTextField textField2 = new JTextField(10);
         f.add(textField2);
-        f.setLayout( new FlowLayout(FlowLayout.LEFT));
+
+        JCheckBox checkbox1 =  new JCheckBox("Male");
+        JCheckBox checkbox2 =  new JCheckBox("Female");
+
+        f.add(checkbox1);
+        f.add(checkbox2);
+
+
+//        f.setLayout( new FlowLayout(FlowLayout.LEFT));
     }
 }
