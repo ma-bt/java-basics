@@ -25,9 +25,11 @@ public class Main {
 
         JCheckBox checkbox1 =  new JCheckBox("Male");
         JCheckBox checkbox2 =  new JCheckBox("Female");
+        JCheckBox checkbox3 =  new JCheckBox("Unisex");
 
         f.add(checkbox1);
         f.add(checkbox2);
+        f.add(checkbox3);
 
 
 //        f.setLayout( new FlowLayout(FlowLayout.LEFT));
