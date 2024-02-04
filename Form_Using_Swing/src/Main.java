@@ -32,6 +32,5 @@ public class Main {
         f.add(checkbox3);
 
 
-//        f.setLayout( new FlowLayout(FlowLayout.LEFT));
     }
 }
