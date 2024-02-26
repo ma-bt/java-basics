@@ -7,13 +7,16 @@ public class GridBagLayoutDemo {
         f.setLayout(new GridBagLayout());
 
         GridBagConstraints gcb = new GridBagConstraints();
+        gcb.fill = GridBagConstraints.HORIZONTAL;//fills button horizontally
+        gcb.insets = new Insets(5,5,5,5); //for gaps between buttons
+
 
         Button button1 = new Button("Button 1");
         gcb.gridx = 0;
         gcb.gridy = 0;
         gcb.gridwidth = 1;
-        gcb.fill = GridBagConstraints.HORIZONTAL;
-        gcb.insets = new Insets(5,5,5,5);
+
+
         f.add(button1,gcb);
 
         Button button2 = new Button("Button 2");

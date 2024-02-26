@@ -10,11 +10,11 @@ public class Client {
         Scanner ins = new Scanner(cs.getInputStream());
         PrintWriter outs = new PrintWriter(cs.getOutputStream(), true);
         //sent to server
-        outs.println(5);
+        outs.println("Welcome");
         //received  from the server
-        int fact = ins.nextInt();
-        System.out.println("Send Number:" + 5);
-        System.out.println("Factorial from Server:" + fact);
+//        int fact = ins.nextInt();
+        System.out.println("Welcome Supriya");
+//        System.out.println("Factorial from Server:" + fact);
 
         ins.close();
         outs.close();

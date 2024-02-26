@@ -15,10 +15,10 @@ public class Server {
         Scanner ins = new Scanner(cs.getInputStream());
         PrintWriter outs = new PrintWriter(cs.getOutputStream(), true);
 
-        int facto = ins.nextInt();
+//        int facto = ins.nextInt();
 //        int result = fact(facto);
 
-        outs.println(fact(facto));
+        outs.println("Hello");
 
         outs.close();
         ins.close();
